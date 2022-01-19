@@ -1,0 +1,143 @@
+    1  sudo apt update
+    2  apt upgrade
+    3  sudo apt upgrade
+    4  java -version
+    5  sudo apt install openjdk-11-jdk
+    6  java -version
+    7  cd apps/
+    8  ll
+    9  tar -xvf kafka_2.13-3.0.0.tgz 
+   10  ll
+   11  rm kafka_2.13-3.0.0.tgz 
+   12  ll
+   13  cd kafka_2.13-3.0.0/
+   14  ll
+   15  cd bin
+   16  pwd
+   17  cd /
+   18  ll
+   19  ls -a
+   20  ll -a
+   21  cd /home/
+   22  ll
+   23  ls -a
+   24  ll-a
+   25  ll -a
+   26  cd /
+   27  ls
+   28  ll
+   29  vim ~/.bashrc
+   30  sudo apt install vim
+   31  vim ~/.bashrc
+   32  cd /home/apps
+   33  cd /home
+   34  ls
+   35  cd groot/
+   36  ls apps/
+   37  cd apps/kafka_2.13-3.0.0/bin/
+   38  pwd
+   39  vim ~/.bashrc
+   40  ls
+   41  kafka-topics
+   42  kafka-topics.sh
+   43  cd apps/kafka_2.13-3.0.0/data/kafka/
+   44  pwd
+   45  cd ..
+   46  cd co
+   47  cd config/
+   48  vim server.properties 
+   49  cd ..
+   50  kafka-server-start.sh config/server.properties 
+   51  kafka-topics
+   52  kafka-topics.sh
+   53  cd apps/
+   54  cd kafka_2.13-3.0.0/
+   55  ls
+   56  mkdir data
+   57  cd data/
+   58  mkdir zookeeper
+   59  mkdir kafa
+   60  mkdir kafka
+   61  rm kafa
+   62  rmdir kafa
+   63  ll
+   64  cd zookeeper/
+   65  pwd
+   66  cd ..
+   67  cd c
+   68  cd ..
+   69  cd config/
+   70  ls
+   71  vim zookeeper.properties 
+   72  cd ..
+   73  cd bin/
+   74  ls
+   75  zookeeper-server-start.sh 
+   76  zookeeper-server-start.sh config/zookeeper.properties
+   77  cd ..
+   78  zookeeper-server-start.sh config/zookeeper.properties
+   79  cd apps/kafka_2.13-3.0.0/data/
+   80  cd kafka/
+   81  ls
+   82  kafka-console-producer.sh --broker-list localhost:9092 --topic first_topic
+   83  kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic first_topic --group my_second_grp
+   84  kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic first_topic --group my_second_grp --from-beginning
+   85  kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic first_topic --group my_second_grp
+   86  kafka-topics.sh --bootstrap-server localhost:9092 --list
+   87  kafka-topics.sh --bootstrap-server localhost:9092 --topic first_topic --describe
+   88  kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list
+   89  kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group my_first_group
+   90  kafka-console-producer.sh --broker-list localhost:9092 --topic first_topic
+   91  kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic first_topic --group my_first_group
+   92  kafka-topics.sh --zookeeper 127.0.0.1:2181 --topic first_topic --create --partitions 3 --replication-factor 1
+   93  kafka-topics.sh --bootstrap-server 127.0.0.1:2181 --topic first_topic --create --partitions 3 --replication-factor 1
+   94  kafka-topics.sh --botstrap-server 127.0.0.0.1:2181 --list
+   95  kafka-topics.sh --bootstrap-server 127.0.0.0.1:2181 --list
+   96  kafka-topics.sh --bootstrap-server 127.0.0.1:2181 --list
+   97  kafka-topics.sh --zookeeper 127.0.0.1:2181 --list
+   98  kafka-topics.sh --bootstrap-server 127.0.0.1:2181 --list
+   99  kafka-topics.sh --bootstrap-server 127.0.0.1:2181 --listTopics
+  100  kafka-topics.sh --bootstrap-server 127.0.0.1:9092 --listTopics
+  101  kafka-topics.sh --bootstrap-server 127.0.0.1:9092 --list
+  102  kafka-topics.sh --bootstrap-server 127.0.0.1:9092 --topic first_topic --create --partitions 3 --replication-factor 1
+  103  kafka-topics.sh --bootstrap-server 127.0.0.1:9092 --list
+  104  kafka-topics.sh --bootstrap-server 127.0.0.1:9092 --topic first_topic --describe
+  105  kafka-topics.sh --bootstrap-server 127.0.0.1:9092 --topic first_topic --delete
+  106  kafka-topics.sh --bootstrap-server 127.0.0.1:9092 --list
+  107  kafka-topics.sh --bootstrap-server localhost:9092 --topic first_topic --create --partitions 3 --replication-factor 1
+  108  kafka-console-producer.sh --broker-list localhost:9092 --topic first_topic
+  109  kafka-console-producer.sh --broker-list localhost:9092 --topic second_topic
+  110  kafka-topics.sh --boostrap-server localholhost:9092 --topic second_topic --describe
+  111  kafka-topics.sh --bootstrap-server localholhost:9092 --topic second_topic --describe
+  112  kafka-topics.sh --bootstrap-server localhost:9092 --topic second_topic --describe
+  113  vim config/server.properties 
+  114  kafka-console-producer.sh --broker-list localhost:9092 --topic thrid_topic
+  115  kafka-topics.sh --bootstrap-server localhost:9092 --topic third_topic --describe
+  116  kafka-topics.sh --bootstrap-server localhost:9092 --list
+  117  kafka-topics.sh --bootstrap-server localhost:9092 --topic thrid_topic --describe
+  118  kafka-console-consumer.sh --broker-list localhost:9092 --topic first_topic
+  119  kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic first_topic
+  120  kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic first_topic --from-beginning
+  121  kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic fist_topic --group my_first_grp
+  122  kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic first_topic --group my_first_grp
+  123  cd apps/kafka_2.13-3.0.0/
+  124  zookeeper-server-start.sh config/zookeeper.properties 
+  125  kafka-server-start.sh config/server.properties 
+  126  sudo apt install maven
+  127  sudo apt install apt-transport-https curl
+  128  sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+  129  echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+  130  sudo apt update
+  131  sudo apt install brave-browser
+  132  ls /usr/share/
+  133  ls /usr/share/applications
+  134  sudo vim /usr/share/applications/STS.desktop
+  135  cat /usr/share/applications/STS.desktop 
+  136  cd apps/kafka_2.13-3.0.0/
+  137  zookeeper-server-start.sh config/zookeeper.properties 
+  138  kafka-server-start.sh config/server.properties 
+  139  curl
+  140  kafka-topics.sh --bootstrap-server localhost:9092 --list
+  141  kafka-topics.sh --bootstrap-server localhost:9092 --topic twitter_tweets --create --partition 6 --replication-factor 1
+  142  kafka-topics.sh --bootstrap-server localhost:9092 --topic twitter_tweets --create --partitions 6 --replication-factor 1
+  143  kafka-topics.sh --bootstrap-server localhost:9092 --list

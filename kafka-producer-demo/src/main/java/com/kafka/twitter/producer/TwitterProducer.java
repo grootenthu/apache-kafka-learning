@@ -55,13 +55,6 @@ public class TwitterProducer {
 		// create a kafka producer
 		KafkaProducer<String, String> producer = createKafkaProducer();
 		
-		//Adding a shutdown hook for graceful terminaton
-		Runtime.getRuntime().addShutdownHook(new Thread(() -> {
-			producer.close();
-			hosebirdClient.stop();
-			logger.info("Terninated the TwitterProducer App successfully!!!");
-		}));
-
 		// loop to send tweets to kafka
 		// on a different thread, or multiple different threads....
 		while (!hosebirdClient.isDone()) {
